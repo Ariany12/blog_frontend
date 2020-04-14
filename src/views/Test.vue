@@ -15,12 +15,7 @@ export default {
       message: "Welcome to Vue.js!"
     };
   },
-  created: function() {
-    console.log('in the created');
-    console.log(local.Storage.getItem("jwt"));
-    console.log("this outside callack")
-    axios.get("api/index").then(response =>)
-  },
+  created: function() {},
   methods: {}
 };
 </script>
