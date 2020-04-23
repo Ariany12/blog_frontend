@@ -1,4 +1,5 @@
 
+
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
@@ -15,12 +16,7 @@ export default {
       message: "Welcome to Vue.js!"
     };
   },
-  created: function() {
-    console.log('in the created');
-    console.log(local.Storage.getItem("jwt"));
-    console.log("this outside callack")
-    axios.get("api/index").then(response =>)
-  },
+  created: function() {},
   methods: {}
 };
 </script>

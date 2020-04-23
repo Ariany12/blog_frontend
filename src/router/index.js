@@ -6,6 +6,8 @@ import Signup from "../views/Signup.vue"
 import Login from "../views/Login.vue"
 import Logout from "../views/Logout.vue"
 import PostsIndex from "../views/PostsIndex.vue"
+import PostsNew from "../views/PostsNew.vue"
+import PostsShow from "../views/PostsShow.vue"
 
 
 Vue.use(VueRouter)
@@ -15,10 +17,10 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: Home
-  },
+  }, 
   {
     path: '/test',
-    name: 'Test',
+    name: 'test',
     component: Test
   },
   { 
@@ -40,6 +42,16 @@ Vue.use(VueRouter)
     path: "/PostsIndex",
     name: "posts-index",
     component: PostsIndex
+   },
+   {
+    path: "/Posts/New",
+    name: "posts-new",
+    component: PostsNew
+   },
+   {
+    path: "/PostsShow",
+    name: "posts-show",
+    component: PostsShow
    },
    {
     path: '/about',

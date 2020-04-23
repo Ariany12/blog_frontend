@@ -1,5 +1,4 @@
 
-
 <template>
   <div class="signup">
     <div class="container">
@@ -11,6 +10,8 @@
         <div class="form-group">
           <label>Name:</label> 
           <input type="text" class="form-control" v-model="name">
+          <small v-if="name.length <= 20">{{20 - name.length}} characters remaining</small>
+          <small v-if="name.length > 20" class="text-danger">Name must be a max of 20 characters</small>
         </div>
         <div class="form-group">
           <label>Email:</label>
@@ -19,6 +20,7 @@
         <div class="form-group">
           <label>Password:</label>
           <input type="password" class="form-control" v-model="password">
+          <small v-if="password !== passwordConfirmation" class="text-danger">Password Confirmation must match password </small>
         </div>
         <div class="form-group">
           <label>Password confirmation:</label>

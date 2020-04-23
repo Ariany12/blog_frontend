@@ -6,6 +6,8 @@
       <router-link to="/signup">Signup</router-link> |
       <router-link to="/login">Login</router-link>  |
       <router-link to="/logout">Logout</router-link> |
+      <router-link to="/PostsIndex">Posts Index</router-link> |
+      <router-link to="/Posts/New">Posts New</router-link> |
     </div>
     <router-view/>
   </div>
@@ -33,3 +35,22 @@
   color: #42b983;
 } */
 </style>
+
+// <script>
+// export default {
+//   methods: {
+//     isLoggedIn: function(){
+//       console.log(' i am checking if i\ 'm looged in')
+//       if (localStorage.getItem("jwt")){
+//         return true
+//       } else{
+//         return false
+//       }
+//     },
+//     getUserId: function (){
+//       return parseInt(localStorage.getItem));
+//     }
+//   }
+// }
+// </script>
+// export default
