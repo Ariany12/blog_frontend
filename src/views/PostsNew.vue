@@ -14,6 +14,10 @@
           <label>Body:</label>
           <input type="text" class="form-control" v-model="body">
         </div>
+        <div class="form-group">
+          <label>User_id:</label>
+          <input type="text" class="form-control" v-model="user_id">
+        </div>
         <!-- <textarea rows="30" cols="80"></textarea> -->
 
         <div class="form-group">
@@ -36,6 +40,7 @@ export default {
       title: "",
       body: "",
       image: "",
+      user_id: "",
       errors: []
 
     };

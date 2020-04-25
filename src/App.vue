@@ -8,6 +8,7 @@
       <router-link to="/logout">Logout</router-link> |
       <router-link to="/PostsIndex">Posts Index</router-link> |
       <router-link to="/Posts/New">Posts New</router-link> |
+      <router-link to="/Posts/Show">Posts Show</router-link> |
     </div>
     <router-view/>
   </div>

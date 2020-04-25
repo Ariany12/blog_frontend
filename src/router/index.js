@@ -44,12 +44,12 @@ Vue.use(VueRouter)
     component: PostsIndex
    },
    {
-    path: "/Posts/New",
+    path: "/PostsNew",
     name: "posts-new",
     component: PostsNew
    },
    {
-    path: "/PostsShow",
+    path: "/Posts/:id",
     name: "posts-show",
     component: PostsShow
    },
